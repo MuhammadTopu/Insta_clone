@@ -1,29 +1,67 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --white: #fff;
+  --black: #000;
+  --grey: #262626;
+  --light-grey: #a8a8a8;
+  --blue: #0095f6;
+  --hover-grey: rgba(255, 255, 255, 0.1); /* Light grey for hover */
 }
 
-.mainDiv{
-display: flex;
-
+body {
+  background-color: var(--black);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--white);
+  overflow-x: hidden;
+  display: flex;
+  width: 100vw;
 }
 
-.sidebar{
-    width: 22%;
-    height:100vh;
-    background-color: #000000;
-    border-right: 1px solid rgba(128, 128, 128, 0.322);
-}
-.sidebar > img{
-    width: 135px;
-    margin-top: 2rem;
-    margin-left: 10px;
-    
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.5rem;
+  border-right: 1px solid var(--light-grey);
 }
 
-.main_content{
-    width: 100%;
-    height: 100vh;
-    background-color: #000000;
+.logo {
+  width: 120px; /* Increased logo size */
+  margin: 1.5rem 0; /* Adjusted margin for better spacing */
+  display: block;
+}
+
+.link img {
+  height: 1.5rem; /* Increased icon size */
+  margin-right: 1rem; /* Increased spacing between icon and text */
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  padding: 0.8rem 1rem; /* Increased padding for better spacing */
+  align-items: center;
+  font-size: 1rem; /* Increased font size */
+  color: var(--white);
+  transition: background-color 0.2s ease; /* Smooth hover transition */
+  border-radius: 10px; /* Slightly rounded corners for hover effect */
+}
+
+.link:hover {
+  background-color: var(--hover-grey); /* Subtle hover effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.bottom {
+  margin-bottom: 2rem; /* Adjusted bottom margin */
 }
