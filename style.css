@@ -74,7 +74,7 @@ a {
 /* Start Profile Section */
 .profile-section {
   width: 60%;
-  margin-left: 15vh;
+  margin-left: 10vh;
   display: grid;
   gap: 20px;
 }
