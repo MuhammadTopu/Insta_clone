@@ -63,6 +63,107 @@ a {
 }
 /* sidebar finished */
 
+
+
+/* Start Profile Section */
+.profile-section {
+  width: 60%;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: 120px auto;
+  align-items: center;
+  gap: 150px;
+}
+
+.profile-pic {
+  padding: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: grid;
+  gap: 10px;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.verified-icon {
+  width: 18px;
+  height: 18px;
+  gap: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  font-size: 16px;
+}
+
+.bio a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.more-btn {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.follow-btn {
+  background-color: rgb(6, 151, 248);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.message-btn{
+  background-color: rgb(71, 69, 69);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.more-btn {
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+/* End Profile Section */
+
 .bottom {
   margin-bottom: 2rem; 
 }
